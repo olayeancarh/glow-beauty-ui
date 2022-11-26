@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(250, 248, 246);
+  font-family: "Sofia", sans-serif;
+  z-index: 100;
+}
+
+.text-color1 {
+  color: rgb(25,24,58);
+}
+
+.text-color2 {
+  color: rgb(245,104,60);
+}
+
+.cart {
+  color: #fff;
+  background-color: rgb(245,104,60);
+}
+
+.double {
+  background-color: rgb(162, 148, 205);
+  color: #fff;
+}
+
+.natural {
+  background-color: rgb(255,229,222);
+}
+
+.bg1 {
+  background-image: url("../images/item6.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 196px;
+}
+
+.bg2 {
+  background-image: url("../images/item7.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 196px;
+}
+
+.h1 {
+  height: 510px;
+}
+
+.item9 {
+  background-color: rgb(192,181,221);
+  height: 475px;
+}
+
+.item10 {
+  background-color: rgb(246,134,106);
+  height: 280px;
+  width: 280px;
+}
+
+.lastlast {
+  background-color: rgb(25,24,58);
+}
+
+.navigation {
+  animation: nav-slide 0.5s ease-in;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+@keyframes nav-slide {
+  0% { transform: translate(0, -50px); opacity: 0.1; }
+  100% { transform: translate(0, 0); opacity: 1; }
+}
+
+.section2 {
+  animation: secttion2 0.5s ease
+}
+
+@keyframes section2 {
+  0% {width: 100%; height: 100%;}
+}

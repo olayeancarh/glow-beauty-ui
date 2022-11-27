@@ -4,6 +4,15 @@ body {
   z-index: 100;
 }
 
+header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  transition: all .3s ease;
+}
+
 .text-color1 {
   color: rgb(25, 24, 58);
 }
@@ -51,7 +60,7 @@ body {
 }
 
 .curo {
-  animation: curo 1.5s ease-out;
+  animation: curo 0.7s ease-out;
 }
 
 .item9 {
@@ -73,6 +82,15 @@ body {
   animation: nav-slide 0.7s ease-in;
   transform: translate(0, 0);
   opacity: 1;
+} 
+
+.curology2 {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.curo2 {
+  animation: curo-up 0.7s ease-in;
 }
 
 @keyframes nav-slide {
@@ -102,6 +120,18 @@ body {
     opacity: 1;
     transform: translate(0, 0px);
     /* margin-top: 0%; */
+  }
+}
+
+@keyframes curo-up {
+  from {
+    opacity: 0.1;
+    transform: translate(0, 500px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0px);
   }
 }
 

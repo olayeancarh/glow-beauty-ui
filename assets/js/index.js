@@ -6,10 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        if ([...entry.target.classList].includes("curology")) {
+        let cur1 = [...entry.target.classList].includes("curology");
+        let cur2 = [...entry.target.classList].includes("curology2");
+
+        if (cur1 || cur2) {
           entry.target.classList.add("curo");
-        }
-        if ([...entry.target.classList].includes("curology2")) {
           entry.target.classList.add("curo2");
         }
       }
